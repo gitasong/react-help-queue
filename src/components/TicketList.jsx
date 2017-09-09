@@ -1,7 +1,9 @@
 import React from "react";
 
 function TickteList(props) {
-  return ();
+  return (
+    <Ticket />
+  );
 }
 
 export default TicketList;
