@@ -1,6 +1,6 @@
 import React from "react";
 
-function TickteList(props) {
+function TicketList(props) {
   return (
     <Ticket
       location="3a"
