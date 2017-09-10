@@ -6,7 +6,7 @@ import App from "./components/App";
 
 ReactDOM.render(
   <AppContainer>
-    <Component/>
+    <App/>
   </AppContainer>,
   document.getElementById('react-app-root')
 );
