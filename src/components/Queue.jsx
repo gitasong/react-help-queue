@@ -22,7 +22,7 @@ class Queue extends React.Component {
     return (
       <div>
         <TicketList ticketList = {this.state.masterTicketList} />
-        <NewTicketControl />
+        <NewTicketControl onNewTicketCreation = {this.addNewTicketToList} />
       </div>
     );
   }
