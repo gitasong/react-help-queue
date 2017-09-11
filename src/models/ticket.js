@@ -1,5 +1,5 @@
 class Ticket {
-  constructor(names, locatoin, description) {
+  constructor(names, location, description) {
     this.names = names;
     this.location = location;
     this.description = description;
