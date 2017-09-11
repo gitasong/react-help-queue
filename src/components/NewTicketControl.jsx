@@ -7,8 +7,9 @@ class NewTicketControl extends React.Component {
     this.state = {formVisibleOnPage: false};
   }
 
-  handleDisplayingNewTicketForm(event){
+  function handleDisplayingNewTicketForm(event){
     console.log("New ticket button was clicked!");
+    this.setState({formVisibleOnPage: true});
   }
 
   render() {
