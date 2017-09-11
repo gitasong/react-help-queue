@@ -11,7 +11,8 @@ class NewTicketForm extends React.Component {
   handleNewTicketFormSubmission(event) {
     event.preventDefault()
     const { _names, _location, _issue } = this.refs;
-    alert(`Data Gathered! ${_names.value}, ${_location.value}, ${_issue.value}`);
+    var newTicket = new Ticket(_names.value, _location.value, _issue.value);
+    console.log(newTicket);
   }
 
   render(){
