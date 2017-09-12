@@ -24,7 +24,7 @@ class NewTicketControl extends React.Component {
     let formAreaContent = null;
     if (formVisibleOnPage) {
       formAreaContent = <NewTicketForm
-        onNewTicketCreation={this.props.onNewTicketCreation}/>
+        onNewTicketCreation={this.props.onNewTicketCreation}hideFormAfterSubmission = {this.hideForm}/>
     } else {
       formAreaContent = <button onClick={this.showForm}>Request Help</button>;
     }
