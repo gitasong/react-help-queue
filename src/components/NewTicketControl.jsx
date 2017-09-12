@@ -8,17 +8,19 @@ class NewTicketControl extends React.Component {
 
   constructor(props) {
     super(props);
-    this.showForm = this.showForm.bind(this);
-    this.hideForm = this.hideForm.bind(this);
-    this.state = {formVisibleOnPage: false};
+    this.showFormModal = this.showFormModal.bind(this);
+    this.hideFormModal = this.hideFormModal.bind(this);
+    this.state = {
+      formModalIsShowing: false
+    };
   }
 
-  showForm(event){
-    this.setState({formVisibleOnPage: true});
+  showFormModal(event){
+    this.setState({formModalIsShowing: true});
   }
 
-  hideForm(event){
-    this.setState({formVisibleOnPage: false});
+  hideFormModal(event){
+    this.setState({formModalIsShowing: false});
   }
 
   render() {
