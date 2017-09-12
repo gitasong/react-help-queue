@@ -11,10 +11,12 @@ class NewTicketControl extends React.Component {
     console.log(this);
   }
 
-  handleDisplayingNewTicketForm(event){
-    console.log("New ticket button was clicked!");
+  showForm(event){
     this.setState({formVisibleOnPage: true});
-    console.log(this);
+  }
+
+  hideForm(event){
+    this.setState({formVisibleOnPage: false});
   }
 
   render() {
