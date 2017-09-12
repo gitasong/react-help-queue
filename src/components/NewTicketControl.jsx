@@ -24,14 +24,17 @@ class NewTicketControl extends React.Component {
   }
 
   render() {
-    const formVisibleOnPage = this.state.formVisibleOnPage;
-    let formAreaContent = null;
-    if (formVisibleOnPage) {
-      formAreaContent = <NewTicketForm
-        onNewTicketCreation={this.props.onNewTicketCreation}hideFormAfterSubmission = {this.hideForm}/>
-    } else {
-      formAreaContent = <Button bsStyle="primary" bsSize="large" block onClick={this.showForm}>Request Help</Button>;
-    }
+    <div>
+      <Button
+        bsStyle="primary"
+        bsSize="large"
+        block
+        onClick={this.showFormModal}>
+          Request Help
+        </Button>
+      </div>
+    );
+  }
 
     return (
         <div>
