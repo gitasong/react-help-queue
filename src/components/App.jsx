@@ -4,10 +4,10 @@ import Queue from "./Queue";
 
 function App(){
   return (
-    <div>
-      <Header />
-      <Queue />
-    </div>
+      <div>
+          <Header />
+          <Queue />
+      </div>
   );
 }
 
