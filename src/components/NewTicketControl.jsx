@@ -19,6 +19,7 @@ class NewTicketControl extends React.Component {
     this.setState({
       formModalIsShowing: true
     });
+    console.log(this.state.formModalIsShowing)
   }
 
   hideFormModal(){
@@ -36,7 +37,7 @@ class NewTicketControl extends React.Component {
                 block
                 onClick={this.showFormModal}>
                   Request Help
-                </Button>
+            </Button>
             <Modal
                 show={this.state.formModalIsShowing}
                 onHide={this.hideFormModal}
