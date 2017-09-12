@@ -27,7 +27,7 @@ class NewTicketControl extends React.Component {
       formAreaContent = <NewTicketForm
         onNewTicketCreation={this.props.onNewTicketCreation}hideFormAfterSubmission = {this.hideForm}/>
     } else {
-      formAreaContent = <Button bsStyle="primary" bsSize="large" onClick={this.showForm}>Request Help</Button>;
+      formAreaContent = <Button bsStyle="primary" bsSize="large" block="true" onClick={this.showForm}>Request Help</Button>;
     }
 
     return (
